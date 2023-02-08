@@ -1,0 +1,19 @@
+<p>tut32 trackBy with ngFor</p>
+
+<table border="1" [cellPadding]="10">
+    <tr *ngFor="let s of students; let i=index ; TrackBy:newtrackwalafunc">
+        <td>{{i+1}}</td>
+        <td>{{s.studentId}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.gender}}</td>
+        <td>{{s.age}}</td>
+        <td>{{s.Course}}</td>
+    </tr>
+</table>
+
+<br><br>
+<button (click)="getMoreStudents()">Get more students</button>
+
+
+
+

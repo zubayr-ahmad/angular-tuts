@@ -1,0 +1,21 @@
+<p>tut43 works!</p>
+<form [formGroup]="loginform" (ngSubmit)="userLogin()">
+  <input
+    type="text"
+    placeholder="Enter Name"
+
+    formControlName="user"
+  /><br />
+  <span style="color:rgb(184, 15, 15); font-size: 13px;" *ngIf="userVald && userVald.invalid && userVald.touched">This field is not valid</span>
+  <br />
+  <input
+    type="password"
+    placeholder="Enter Password"
+
+    formControlName="password"
+  /><br />
+  <span style="color:rgb(184, 15, 15); font-size: 13px;" *ngIf="password && password.invalid && password.touched">This field is not valid</span>
+  <br />
+
+  <button [disabled]="loginform.invalid">Login</button>
+</form>

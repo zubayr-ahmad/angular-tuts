@@ -1,0 +1,15 @@
+<h3>tut35 ngClass</h3>
+
+<p [ngClass]="['one','two']">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<!-- These are just different syntaxes one like list and others... -->
+<div *ngFor="let u of users" [ngClass]="'three four'">
+{{u}}
+</div>
+
+<p [ngClass]="{'one':true,'three':false}">Example using ngClass as object</p>
+
+<div [ngClass]="getcssclass('mode')">
+    example using ngClass with component method
+</div>
+
+

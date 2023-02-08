@@ -1,0 +1,7 @@
+<p>tut34 ngStyle</p>
+
+<ul *ngFor="let i of people">
+    <li [ngStyle]="{'color':getColor(i.cou)}">
+        {{i.name}} - {{i.cou}}
+    </li>
+</ul>

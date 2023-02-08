@@ -1,0 +1,12 @@
+<p>tut15 ngIf-else</p>
+<h1 *ngIf="show=='black'; then ifBlock else elseblock"></h1>
+<ng-template #ifBlock>
+    <h1>
+        If condition
+    </h1>
+</ng-template>
+<ng-template #elseblock>
+    <h1>
+        Else condition
+    </h1>
+</ng-template>

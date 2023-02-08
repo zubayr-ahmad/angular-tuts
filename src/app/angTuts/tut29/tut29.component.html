@@ -1,0 +1,32 @@
+<p>tut29 ng Switch</p>
+<!-- 
+<div [ngSwitch]="name">
+    <div *ngSwitchCase="'ADJh'">Hello {{name}}</div>
+    <div *ngSwitchCase="'Zubair'">Hello {{name}}</div> //This does not break and will check all switch cases
+    <div *ngSwitchCase="'Zubair'">Hello {{name}}</div>
+    <div *ngSwitchDefault>User not found</div>
+
+</div> -->
+
+
+Enter your name: <input type="text" #textName (keyup)="1">
+<!-- 
+<div [ngSwitch]="textName.value">
+    <div *ngSwitchCase="'ADJh'">Hello {{name}}</div>
+    <div *ngSwitchCase="'Zubair'">Hello {{name}}</div> This does not break and will check all switch cases
+    <div *ngSwitchCase="'zubair'">Hello {{name}}</div>
+    <div *ngSwitchDefault>User not found</div>
+
+</div> -->
+
+<!-- Not switch cases but just for practice -->
+<div *ngIf="listName.includes(textName.value);  then nameExist else doesntExist"></div>
+<ng-template #nameExist>
+    <div style="color:green;">Welcome {{textName.value}}</div>
+</ng-template>
+
+<ng-template #doesntExist>
+    <div>Tou mera putt chutti ker</div>
+</ng-template>
+
+

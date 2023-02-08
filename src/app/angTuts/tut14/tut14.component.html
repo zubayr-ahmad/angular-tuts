@@ -1,0 +1,6 @@
+<p>tut14 (Property binding)</p>
+<input type="text" name="user-name" value={{name}} disabled="{{disable}}">
+<br><br>
+<input type="text" name="user-name" [value]=name [disabled]="disable">
+<button (click)="Enable()">Enable</button>
+

@@ -1,0 +1,30 @@
+<p>tut41 Template Driven forms</p>
+
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+<!-- <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.controls)"> -->
+    
+    
+    <input type="text" placeholder="Enter Name" name="name" required ngModel>
+    <br><br>
+    
+    <input type="text" placeholder="Enter Email" name="email" required ngModel #email="ngModel">
+    <span class="th" *ngIf="email.touched && !email.valid">Please enter email</span>
+    <br><br>
+    
+    <input type="password" placeholder="Enter password" name="password" required ngModel>
+    <br><br>
+
+    <button type="submit" [disabled]="!loginForm.valid">
+        Login
+    </button>
+</form>
+
+<button (click)="userLogin(loginForm.value)">Outer button serves same function</button>
+
+
+
+
+
+
+
+

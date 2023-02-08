@@ -1,0 +1,22 @@
+<h3>{{title}}</h3>
+<button (click)="getData('Done!')">Call Function</button>
+<br/>
+<br/>
+<br/>
+<input type="text" #box01 (keyup)="getData(box01.value)" placeholder="event keyup"/>
+<input type="text" #box02 (keydown)="getData(box02.value)" placeholder="event keydown"/>
+<input type="text" #box03 (blur)="getData(box03.value)" placeholder="event blur"/> <!--This will call when you will stop the focusing on it-->
+
+<h1 #box04 (mouseover)="getData('Over')">For mouse over</h1>
+<h1 #box05 (mouseleave)="getData('Leave')">For mouse leave</h1>
+
+
+
+
+
+
+
+
+
+
+

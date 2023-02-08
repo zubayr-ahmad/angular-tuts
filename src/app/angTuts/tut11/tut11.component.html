@@ -1,0 +1,13 @@
+<p>tut11 (get input box value display)</p>
+<input type="text" 
+#box1_name
+
+placeholder="Enter Name" 
+name="username">
+
+<button (click) = "getValue(box1_name.value)">Enter value</button>
+<button (click) = "getValue(box1_name.name)">Name property</button>
+<button (click) = "getValue(box1_name.placeholder)">placeholder property</button>
+<p>
+  Box value is: {{displayVal}}
+</p>

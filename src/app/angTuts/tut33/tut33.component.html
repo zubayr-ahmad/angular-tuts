@@ -1,0 +1,21 @@
+<p>tut33 Grouping with ngFor</p>
+
+<ul *ngFor="let group of CountryDetails">
+    <li>{{group.country}}</li>
+    <ul>
+        <li *ngFor="let person of group.people">
+            {{person.name}}
+        </li>
+    </ul>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
