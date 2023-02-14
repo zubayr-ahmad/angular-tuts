@@ -10,6 +10,7 @@ import { Tut54Component } from './angTuts/tut54/tut54.component';
 import { Tut55Component } from './angTuts/tut55/tut55.component';
 import { Tut55child1Component } from './angTuts/tut55child1/tut55child1.component';
 import { Tut55child2Component } from './angTuts/tut55child2/tut55child2.component';
+import { Tut81Component } from './angTuts/tut81/tut81.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { Tut55child2Component } from './angTuts/tut55child2/tut55child2.componen
     Tut55Component,
     Tut55child1Component,
     Tut55child2Component,
+    Tut81Component,
     
   ],
   imports: [
